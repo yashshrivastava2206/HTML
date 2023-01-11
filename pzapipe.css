@@ -1,0 +1,209 @@
+body{
+	background-color:black;
+}
+p{
+color:white;
+margin-left:112px;
+margin-top:16px;
+font-size:12px;
+}
+img{
+	margin-left:112px;
+	margin-top:4px;
+	height:85px;
+	width:230px;
+
+}
+ul li{
+	color:white;
+	list-style:none;
+	float:left;
+	display:block;
+	height:20px;
+	width:95px;
+}
+ul li a:hover{
+	color:goldenrod;
+}
+ul li:hover{
+	border-bottom:2px solid goldenrod;
+}
+ul{
+	margin-left:623px;
+	margin-top:-53px;
+}
+ul li a{
+	text-decoration:none;
+	font-size:13px;
+	color:white;
+}
+hr{
+	margin-top:13px;
+	border-color:goldenrod;
+}
+#tab{
+	margin-top:50px;
+}
+#tab table{
+	width:80%;
+margin-left:140px;
+}
+#tab table tr td{
+	color:white;
+	height:50%;
+}
+#tab table tr td img{
+	width:310px;
+	height:220px;
+	border:2px solid black;
+	margin-left:0px;
+}
+#tab table tr td pre{
+	
+	font-size:14px;
+	line-height:18px;
+	color:goldenrod;
+	font-family:bold;
+}
+h2{
+	color:white;
+}
+h5{
+	color:white;
+}
+#review .rev{
+	height:280px;
+	width:300px;
+	color:white;
+	background:linear-gradient(to right,goldenrod,black,plum);
+
+	float:left;
+	margin-left:26px;
+	font-size:16px;
+	
+}
+.mns{
+	width:45%;
+	height:95%;
+	top:240%;
+	left:2%;
+	position:absolute;
+}
+.mns .show{
+	width:90%;
+	height:54%;
+margin-top:5px;
+border:1px solid white;
+margin-left:23px;
+	position:absolute;
+}
+.mns .first
+{
+	width:99%;
+	height:22%;
+margin-top:360px;
+margin-left:2px;
+	position:absolute;
+}
+.mns .first .pic11,.pic12,.pic13{
+	
+float:left;
+width:27%;
+height:80%;
+margin-left:22px;
+border:3px solid white;
+}
+.mns .second
+{
+	width:99%;
+	height:22%;
+margin-top:490px;
+margin-left:2px;
+	position:absolute;
+}
+.mns .second .pic21,.pic22,.pic23{
+	
+float:left;
+width:27%;
+height:80%;
+margin-left:22px;
+border:3px solid white;
+}
+.mns .first .pic11
+{
+	background:url(bm9.jpg);
+	background-position:absolute;
+	background-size:cover;
+}
+.mns .first .pic12
+{
+	background:url(bm8.jpg);
+	background-position:absolute;
+	background-size:cover;
+}
+.mns .first .pic13
+{
+	background:url(bm7.jpg);
+	background-position:absolute;
+	background-size:cover;
+}
+.mns .second .pic21
+{
+	background:url(bm2.jpg);
+	background-position:absolute;
+	background-size:cover;
+}
+.mns .second .pic22
+{
+	background:url(bm11.jpg);
+	background-position:absolute;
+	background-size:cover;
+}
+.mns .second .pic23
+{
+	background:url(bm12.jpg);
+	background-position:absolute;
+	background-size:cover;
+}
+
+
+
+
+
+
+
+.nxt{
+	width:48%;
+	height:97%;
+	position:absolute;
+	left:50%;
+	top:240%;
+}
+.nxt .photo{
+	width:100%;
+	height:45%;
+	
+}
+.nxt .p1{
+	height:99%;
+	margin-left:0px;
+	border:3px solid goldenrod;
+}
+.nxt .p2{
+	height:99%;
+	margin-left:0px;
+	border:3px solid goldenrod;
+}
+.nxt .p3{
+	height:99%;
+	margin-left:0px;
+	width:25%;
+	border:3px solid goldenrod;
+}
+.nxt .video{
+	width:99%;
+	height:43%;
+	position:absolute;
+	top:50%;
+	
+}
