@@ -1,0 +1,14 @@
+{
+    "name": "Nom-du-projet",
+    "image": "node:lts",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "ms-vscode.vscode-typescript-tslint-plugin"
+    ],
+    "postCreateCommand": "npm install"
+  }
+  

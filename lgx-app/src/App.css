@@ -1,0 +1,407 @@
+
+
+.App {
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    display: block;
+    font-family: 'Roghiska';
+  }
+  
+  @font-face {
+    font-family: 'SERFIYAN';
+    src: url('Serfiyan.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'ROGHISKA';
+    src: url('Roghiska.otf') format('opentype');
+  }
+  
+  .hero {
+    align-items: flex-start; 
+    display: flex;
+    justify-content: space-between;
+    /* background :red; */
+    border-bottom: solid black 1px;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    transition: height 0.8s ease;
+    overflow: hidden;
+  }
+  
+  .expand .hero {
+    height: 50%;
+    transition: height 1.2s ease;
+  }
+  
+  .expand .bottom {
+    height: 100%;
+    transition: height 1.4s ease;
+  }
+  
+  
+  .hero .left {
+    float: left;
+    position: relative;
+    top : 0vw;
+    left: 0vh;
+    height: 100%;
+    width: 100%;
+    /* background-image: url('moi_tête.webp'); */
+    background-image: url('moi_tête.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .hero .right {
+    position: relative;
+    height: fit-content;
+    width: 120vh;
+    top : 25%;
+    right: 20vh;
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 2.5vw;
+    flex-grow: 1;
+  }
+  
+  .hero .right p span {
+   position: relative;
+   width: 100%;
+   padding : 1vh;
+   margin : 2vh;
+   cursor: pointer;
+   transition: transform 1s ease-in-out;
+  }
+  
+  .hero .right p span.clicked {
+    transform: scale(2.5);
+  }
+  
+  
+  .right p span::before {
+    content: "";
+    position: absolute;
+    top: 8vh;
+    left: 1.3vh;
+    width: 30%;
+    height: 2%;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 10px;
+  }
+  
+  .right p span:hover::before {
+    transform: scaleX(1);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  .App-header {
+    height: 8vh;
+    width: auto; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2vh;
+    list-style: none;
+    background-color: black;
+  
+  }
+  
+  .App-header .logos {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 2vh;
+    height: fit-content;
+    width: fit-content;
+    left: -13vh;
+    
+  }
+  
+  .App-header .navRight {
+  display: flex;
+  justify-content: space-around;
+  gap: 4vh;
+  font-size: 1.8vh;
+  letter-spacing: 0.1vh;
+  position: relative;
+  right: -15vh;
+  }
+  
+  .navRight1, .navRight2 {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0em 0.4em;
+    color: lightgrey;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.8s ease;
+  }
+  
+  .navRight1:hover, .navRight2:hover{
+    color: whitesmoke;
+    transform: scale(1.05);
+  }
+  
+  .navRight1::before, .navRight2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.20em;
+    width:100%;
+    height: 0.08em;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 1s ease;
+    z-index: 0;
+    border-radius: 8px;
+  }
+  
+  .navRight1:hover::before, .navRight2:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .App-header .title {
+    position: relative;
+    left: 0vh;
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    letter-spacing: 1.2vh;
+    transition: transform 0.8s ease;
+  }
+  
+  .App-header .title:hover {
+    transform: scale(1.05);
+  }
+  
+  .App-header .title .dot{
+    position: relative;
+    top: -0.85vh;
+  }
+  
+  .App-header .title .moi {
+    position: relative;
+    height: 1.8em;
+    width: 1.8em;
+    top: 0.8em;
+    left: -1em;
+  }
+  .App-header .title p .dot {
+    position: relative;
+    top: 5vh;
+  }
+  
+  .logo1, .logo2, .logo3, .logo4, .logo5 {
+    height: 1.5em;
+    width: 1.5em;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    position: relative;
+    top: 0.7vh;
+    left: 0vh;
+  }
+  
+  .logo1:hover, .logo2:hover, .logo3:hover, .logo4:hover, .logo5:hover {
+  transform: scale(1.05);
+  }
+  
+  
+    .bottom {
+      display: flex;
+      position: relative;
+      margin-top: 0vw;
+      top :0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      color: black;
+      align-items: flex-start;
+      background-color: white
+    }
+
+    .bottom .Suite{
+        position: relative;
+        top: 18%;
+        left : 90%;
+        font-size: 1.8 vh;
+        height: fit-content;
+        width: fit-content;
+        transition: transform 0.8s ease-in-out;
+        cursor: pointer;
+        z-index: 10;
+
+        &:hover {
+            transform: translateX(10%) scale(1.03);
+        }
+    }
+    
+    .bottom p.bottomQuit{
+      position: absolute;
+      height: fit-content;
+      width: fit-content;
+      top: 0em;
+      left: 75em;
+      color: black;
+      font-size: 1.3vh;
+      cursor: pointer;
+      transition: transform 1s ease;
+      z-index : 999;
+  
+  
+    }
+  
+    .bottom p.bottomQuit:hover{
+      transform: scale(1.03);
+    }
+  
+  
+  
+    .bottom-text-extract {
+      position: absolute;
+      text-align: left;
+      top: -2vh;
+      font-size: 4vh;
+    }
+  
+    
+    .bottom-text-dev {
+      position: absolute;
+      text-align: left;
+      top: -2vh;
+      font-size: 4vh;
+    }
+  
+    .Music {
+      position: absolute;
+      display: flex;
+      top: 0em;
+      left: 0%;
+      height: fit-content;
+      width: 100%;
+      transition: transform 1s ease;
+      transform: translateX(-100%);
+    }
+  
+  
+    .show-music {
+      position: absolute;
+      transition: transform 1s ease;
+      transform: translateX(3%);
+    }
+    
+  .audio-container {
+    gap: 1vw; /* Espacement vertical entre les lecteurs */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 5vw;
+  }
+  
+  .custom-audio::-webkit-media-controls-panel { /* Définissez la largeur souhaitée pour le panneau de contrôle */
+    height: 4em; /* Définissez la hauteur souhaitée pour le panneau de contrôle */
+  }
+  
+  
+    .Dev {
+      position: absolute;
+      display: flex;
+      top: 0em;
+      left: 0%;
+      height: fit-content;
+      width: 100%;
+      transition: transform 1s ease-in-out;
+      transform: translateX(-100%);
+  
+    }
+  
+    .show-dev {
+      position: absolute;
+      transition: transform 1s ease-in-out;
+      transform: translateX(3%);
+      height: 100%;
+    
+    }
+  
+    .show-dev .project-pictures{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      float: left;
+      top: 10vh;
+      height: 100%;
+      width: fit-content;
+      visibility: visible;
+      transition: transform 0.5s ease-in-out;
+      transform: translateX(0%);
+      gap: 2rem;
+    }
+
+  
+    .show-dev .project-pictures .project1 {
+        background-image: url('mon_site.PNG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 20rem;
+        width: 20rem;
+        transition: transform 0.4s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    .show-dev .project-pictures .project2 {
+        background-image: url('mon_site.PNG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 20rem;
+        width: 20rem;
+        transition: transform 0.4s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    } 
+
+    .show-dev .project-pictures .project3 {
+        background-image: url('mon_site.PNG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 20rem;
+        width: 20rem;
+        transition: transform 0.4s ease-in-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    } 
+  
+    .show-dev .project-pictures img:hover {
+      transform: scale(1.05);
+    }
+  
+    .project-pictures  {
+      visibility: hidden;
+    }
+  
